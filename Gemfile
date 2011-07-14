@@ -8,8 +8,8 @@ gemspec
 
 group :test do
   gem 'rspec-rails', '= 2.5.0'
-  gem 'factory_girl_rails'
-  gem 'factory_girl', '= 1.3.3'
+  gem 'factory_girl',       :git => 'git://github.com/MGPalmer/factory_girl.git',         :branch => 'modify-factories'
+  gem 'factory_girl_rails', :git => 'git://github.com/thoughtbot/factory_girl_rails.git', :tag =>    'v1.1.rc1'
   gem 'rcov'
   gem 'shoulda'
   if RUBY_VERSION < "1.9"

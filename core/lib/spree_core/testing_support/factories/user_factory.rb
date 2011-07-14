@@ -1,4 +1,5 @@
-unless Factory.factories.keys.include?(:user)
+unless FactoryGirl.factories.registered?(:user)
+#unless Factory.factories.keys.include?(:user)
   Factory.define(:user) do |f|
     f.email { Faker::Internet.email }
     f.password "spree123"
